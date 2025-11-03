@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -15,21 +16,21 @@ export default function HomePage() {
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-xl font-bold">Betonstaal</div>
           <nav>
-            <a href="/producten" className="px-3">
-              Producten
-            </a>
-            <a href="/calculator" className="px-3">
-              Calculator
-            </a>
-            <a href="/over-ons" className="px-3">
-              Over Ons
-            </a>
-            <a href="/nieuws" className="px-3">
-              Nieuws
-            </a>
-            <a href="/contact" className="px-3">
-              Contact
-            </a>
+            <Link href="/producten" legacyBehavior>
+              <a className="px-3">Producten</a>
+            </Link>
+            <Link href="/calculator" legacyBehavior>
+              <a className="px-3">Calculator</a>
+            </Link>
+            <Link href="/over-ons" legacyBehavior>
+              <a className="px-3">Over Ons</a>
+            </Link>
+            <Link href="/nieuws" legacyBehavior>
+              <a className="px-3">Nieuws</a>
+            </Link>
+            <Link href="/contact" legacyBehavior>
+              <a className="px-3">Contact</a>
+            </Link>
           </nav>
         </div>
       </header>
@@ -46,18 +47,16 @@ export default function HomePage() {
               Eurocode
             </p>
             <div className="mt-4">
-              <a
-                href="/producten"
-                className="bg-blue-500 text-white px-6 py-2 rounded-md"
-              >
-                Bekijk onze producten
-              </a>
-              <a
-                href="/offerte"
-                className="border border-blue-500 text-blue-500 px-6 py-2 rounded-md ml-4"
-              >
-                Vraag een offerte aan
-              </a>
+              <Link href="/producten" legacyBehavior>
+                <a className="bg-blue-500 text-white px-6 py-2 rounded-md">
+                  Bekijk onze producten
+                </a>
+              </Link>
+              <Link href="/offerte" legacyBehavior>
+                <a className="border border-blue-500 text-blue-500 px-6 py-2 rounded-md ml-4">
+                  Vraag een offerte aan
+                </a>
+              </Link>
             </div>
           </div>
         </section>
