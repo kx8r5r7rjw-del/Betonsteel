@@ -1,0 +1,41 @@
+# Product Catalogue Specification
+
+products:
+  - name: Bouwstaalmat
+    sku: BSM-001
+    category: Bouwstaalmatten
+    description: "Standaard bouwstaalmat voor gewapend beton."
+    price: 35.50
+    attributes:
+      diameter_mm: 8
+      mesh_size_mm: 150
+      dimensions_mm: [5000, 2000]
+    filters:
+      - name: Diameter
+        value: 8mm
+      - name: Mesh Size
+        value: 150x150mm
+
+  - name: Betonijzer staaf
+    sku: BI-001
+    category: Betonijzer
+    description: "Betonijzer staaf voor extra versteviging."
+    price: 12.75
+    attributes:
+      diameter_mm: 10
+      length_m: 6
+    filters:
+      - name: Diameter
+        value: 10mm
+
+  - name: Supportligger
+    sku: SL-001
+    category: Supportliggers
+    description: "Supportligger voor het ondersteunen van de bovenwapening."
+    price: 8.95
+    attributes:
+      height_cm: 10
+      length_m: 2
+    filters:
+      - name: Height
+        value: 10cm
